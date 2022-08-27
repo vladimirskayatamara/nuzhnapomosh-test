@@ -1,0 +1,33 @@
+@mixin flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-all-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-space-btw {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin main-paragraph {
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+
+  @media screen and (max-width: $smTableWidth) {
+    font-size: ($mainFontSize * 0.8);
+    font-weight: ($mainFontWeight * 0.8);
+    line-height: ($mainLineHeight * 0.8);
+  }
+
+  @media screen and (max-width: $smTableWidth) {
+    font-size: ($mainFontSize * 0.7);
+    font-weight: ($mainFontWeight * 0.7);
+    line-height: ($mainLineHeight * 0.7);
+  }
+}

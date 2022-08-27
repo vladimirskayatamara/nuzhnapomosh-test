@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="assets/scss/main.scss" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Нужна Помощь</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <svg
+          width="258"
+          height="35"
+          viewBox="0 0 258 35"
+          fill="none"
+          class="header__logo"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M186.887 15.4366C186.887 6.33076 192.524 0 200.59 0C208.655 0 214.118 6.33076 214.118 15.003C214.118 24.3691 208.481 30.4397 200.416 30.4397C192.351 30.4397 186.887 24.3691 186.887 15.4366ZM85.682 3.90247L80.3052 30.006H81.9529L83.9476 20.2063H89.0642L91.1456 30.006H94.5277L88.2837 0.433565H84.9883L85.682 3.90247ZM84.2945 18.5587L86.4626 7.54487L88.7174 18.5587H84.2945ZM76.6628 0.520327H73.4541V11.6208H67.1233V0.520327H63.9146V30.0928H67.2101V13.3553H73.4541V30.0928H76.6628V0.520327ZM54.4619 11.6208L60.2723 30.006H56.8901L51.6 13.2686H48.3045V30.006H45.0958V13.3553H41.8871L36.597 30.0928H33.2148L39.0252 11.7076L34.7758 0.520327H36.4235L40.7597 11.6208H45.0958V0.520327H48.3045V11.6208H52.6407L56.9768 0.520327H58.6245L54.4619 11.6208ZM12.7482 30.0928V0.520327H9.45277V11.6208H3.20874V0.520327H0V30.0928H3.20874V13.3553H9.45277V30.0928H12.7482ZM29.399 0.520327H31.0468L24.6293 30.0928H22.9816L25.1496 20.2931H21.4205L16.8242 0.520327H20.2064L24.2824 18.5586H25.4965L29.399 0.520327ZM200.59 28.9656C193.999 28.9656 190.53 22.4614 190.53 15.0032C190.53 7.63178 193.825 1.47447 200.416 1.47447C207.007 1.47447 210.476 7.7185 210.476 15.5235C210.476 22.4614 207.181 28.9656 200.59 28.9656ZM123.233 30.0928V0.520327H110.571V30.006H113.78V2.16806H120.024V30.0928H123.233ZM248.027 11.7943V0.520327H244.818V30.0928H248.027C254.791 30.0928 258 26.6239 258 20.7267C257.913 14.8296 254.705 11.881 248.027 11.7943ZM248.027 13.2687V28.5319C253.23 28.5319 254.271 24.9763 254.271 21.1605C254.271 17.3447 253.23 13.2687 248.027 13.2687ZM241.609 28.3583V34.6891H239.962V30.006H217.934V0.520327H221.143V28.3583H226.78V0.520327H229.989V28.3583H235.626V0.520327H238.834V28.3583H241.609ZM182.985 0.520327H179.776V2.94856L171.191 11.9677L160.437 0.520327H155.841L158.616 3.4689V30.006H160.264V5.20335L170.063 15.5234L179.776 5.20335V30.0928H182.985V0.520327ZM140.838 0C132.772 0 127.135 6.33076 127.135 15.4366C127.135 24.3691 132.599 30.4397 140.664 30.4397C148.729 30.4397 154.366 24.3691 154.366 15.003C154.366 6.33076 148.903 0 140.838 0ZM130.778 15.0032C130.778 22.4614 134.247 28.9656 140.838 28.9656C147.429 28.9656 150.724 22.4614 150.724 15.5235C150.724 7.7185 147.255 1.47447 140.664 1.47447C134.073 1.47447 130.778 7.63178 130.778 15.0032Z"
+            fill="#302F2D"
+          ></path>
+        </svg>
+        <div class="header__login">
+          <img
+            src="data:image/png;base64,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"
+            class="avatar"
+          />
+          Екатерина
+        </div>
+        
+      <div id="hamburger-wrapper" class="header__hamburger">
+        <p class="header__hamburger-burger"></p>
+      </div>
+
+        
+      </div>
+    </header>
+
+    <div class="page-layout">
+
+      <aside class="aside">
+        <div class="aside__menu">
+          <div class="aside__menu-item">
+            <span class="aside__menu-icon"></span>
+            <a class="aside__menu-link" href="/" title="Панель управления"
+              >Панель управления</a
+            >
+          </div>
+        </div>
+      </aside>
+
+      <main>
+        <div class="wrapper">
+          <h1>Создание сбора</h1>
+          <div class="funding">
+            <h2 class="funding__title">Информация о сборе</h2>
+
+            <form class="funding__name">
+              <label for="funding-name"> Название сбора </label>
+              <input id="funding-name" name="funding-name" type="text" />
+            </form>
+
+            <div class="funding__target">
+              <h2 class="funding__target-title">Целевые группы</h2>
+              <p>Укажите, кому помогает ваша организация</p>
+            </div>
+
+          <div class="funding__categories"></div>
+
+            <div class="funding__categories__showmore">
+              <button>
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M20 11V29"
+                    stroke="#999999"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M11 20H29"
+                    stroke="#999999"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                  />
+                  <rect
+                    x="0.5"
+                    y="0.5"
+                    width="39"
+                    height="39"
+                    rx="19.5"
+                    stroke="#E6E6E6"
+                  />
+                </svg>
+                 Выбрать ещё
+              </button>
+            </div>
+
+            <div class="funding__submit">
+              <button class="funding__submit-btn">
+                сохранить и продолжить
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

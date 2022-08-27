@@ -1,0 +1,15 @@
+@import "mixins";
+
+@font-face {
+  font-family: Futura;
+  src: url('/assets/fonts/futurabook.woff2') format("woff2");
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: Futura Demi;
+  src: url('/assets/fonts/futurademi.woff2') format("woff2");
+  font-style: normal;
+  font-stretch: normal;
+}
