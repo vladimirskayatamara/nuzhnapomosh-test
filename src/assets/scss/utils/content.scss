@@ -49,9 +49,54 @@ main {
     }
   }
 
-  &__categories {
+  &__result {
+    padding-bottom: 80px;
+
+    &-item {
+      height: 40px;
+      width: fit-content;
+      background-color: $primary-color;
+      border-radius: 20px;
+      padding: 5px 15px;
+      display: flex;
+      align-items: center;
+
+      &_element  {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+
+          &:not(:last-of-type)::after {
+            width: 20px;
+            height: 20px;
+            display: block;
+            margin: 0 10px;
+            content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 9.73333H14' stroke='%23999999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10.2666 13.4667L13.9999 9.73333L10.2666 6' stroke='%23999999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+          }
+      }
+
+      &_delete {
+        width: 20px;
+        border-radius: 10px;
+        background-color: $default-color;
+        background-image: url("data:image/svg+xml,%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6.97925 7' stroke='%23999999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6.97925 1L1 7' stroke='%23999999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E ");
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 20px;
+        margin-left: 12px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &-categories {
     &__showmore {
-      padding-bottom: 46px;
+      padding-bottom: 67px;
       border-bottom: 1px solid $border-base;
 
       button {

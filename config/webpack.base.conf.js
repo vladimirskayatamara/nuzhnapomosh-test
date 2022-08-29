@@ -16,10 +16,6 @@ module.exports = {
   externals: {
     paths: PATHS
   },
-  entry: {
-    app: PATHS.src,
-    lk: `${PATHS.src}/lk.js`
-  },
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist
